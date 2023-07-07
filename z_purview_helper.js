@@ -23,6 +23,7 @@ function saveBlocksImages(doZoom) {
   imageData = imageData.replace('image/jpeg', downloadMime);
   p5.prototype.downloadFile(imageData, 'preview.jpg', 'jpg');
 
+  /*
   // generate 230x120 thumbnail.png centered on mouse
   offscreenCanvas.width = 230;
   offscreenCanvas.height = 120;
@@ -64,4 +65,5 @@ function saveBlocksImages(doZoom) {
   imageData = offscreenCanvas.toDataURL('image/png');
   imageData = imageData.replace('image/png', downloadMime);
   p5.prototype.downloadFile(imageData, 'thumbnail.png', 'png');
+  */
 }
